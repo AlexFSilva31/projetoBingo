@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo Game</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+  </head>
+  <body>
+    <header>
+      <h1>Bingo Game</h1>
+    </header>
+
+    <div class="container">
+      <div id="tela-inicial">
+        <h2>Informe seu nome para iniciar o jogo</h2>
+        <form id="game-form">
+          <label for="player-name">Nome:</label>
+          <input type="text" name="player-name" id="player-name" required />
+          <button type="submit">Iniciar</button>
+        </form>
+      </div>
+
+      <div id="tela-jogo" style="display: none;">
+        <div class="game-controls">
+          <button id="sortear" class="btn">Sortear Número</button>
+          <div class="numero-container">
+            <h3>Número Sorteado:</h3>
+            <div id="numero-sorteado" class="numero">-</div>
+          </div>
+          <div class="numeros-sorteados-container">
+            <h3>Números Sorteados:</h3>
+            <div id="numeros-sorteados" class="numeros-lista"></div>
+          </div>
+        </div>
+
+        <div id="tela-cartela" class="cartela">
+          <h2>Sua Cartela</h2>
+          <table>
+            <tbody id="cartela-body">
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

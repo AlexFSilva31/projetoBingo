@@ -1,0 +1,14 @@
+{
+  "name": "bingo-game",
+  "version": "1.0.0",
+  "description": "Um jogo de bingo multiplayer",
+  "main": "bingo-api/server.js",
+  "scripts": {
+    "start": "node bingo-api/server.js"
+  },
+  "dependencies": {
+    "bingo-game": "file:",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
